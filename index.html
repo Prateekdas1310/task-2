@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body {
+  /* Set "my-sec-counter" to 0 */
+  counter-reset: my-sec-counter;
+}
+
+li::before {
+  /* Increment "my-sec-counter" by 1 */
+  counter-increment: my-sec-counter;
+  content: "Book - " counter(my-sec-counter) ". ";
+} 
+    </style>
+</head>
+<body>
+
+    <div>
+        <h1>Getting Started With Fetch API</h1>
+        <button id="fetchUserDataBtn">Fetch Book Data</button>
+    </div>
+    <hr>
+    <div id="response"></div>                 
+    <script src="fetch-async-awaits.js"></script>
+</body>
+
+</html>
+
+
